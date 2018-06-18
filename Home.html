@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lng="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Adventure Club IIT Mandi</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<!--Head area-->
+		<div class="header">
+			<div class="logo">
+				<img src="Photos/logo.png" alt="IIT Mandi" style="top: 40px; left: 20%;">
+			</div>
+			<div class="name">
+				<h1 class="page-head" >Hikking & Trekking Club, IIT Mandi</h1> 
+			</div>
+		</div>
+		<!--Menu bar-->
+		<div class="list">
+			<ul class="topnav">
+				<li class="right"><a class="active" href="Home.html"> <!---style=" margin-left: 225.2px;"--->Home</a></li>
+				<li class="right" ><a href="activities.html">Activities</a></li>
+				<li class="right"><a href="gallery.html">Gallery</a></li>
+				<li class="right"><a href="treks.html">Treks</a></li>
+				<li class="right"><a href="alumni.html">Alumni</a></li>
+				<li class="right"><a href="contacts.html">Contacts</a></li>
+			</ul>
+		</div>
+		<!--slideshow code-->
+		<div class="slide" style="max-width:100%">
+			<img class="mySlides" src="Photos/suraj.jpg" height="400" width="1000">
+			<img class="mySlides" src="Photos/Chandratal.jpg" height="400" width="1000">
+			<img class="mySlides" src="Photos/nako.jpg" height="400" width="1000">
+		</div>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+									var i;
+									var x = document.getElementsByClassName("mySlides");
+									for (i = 0; i < x.length; i++) {
+																		x[i].style.display = "none";  
+																	}
+									myIndex++;
+									if (myIndex > x.length) {myIndex = 1}    
+									x[myIndex-1].style.display = "block";  
+									setTimeout(carousel, 5000); // Change image every 2 seconds
+								}
+		</script>
+																				
+		
+	</body>
+</html>
