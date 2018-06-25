@@ -8,7 +8,9 @@ body {
     padding: 0;
     text-align: center;
 }
-.logo{float: left;
+.logo{float: left;}
+.logopic{
+width: 300px;
 		
 		}
 .name{float: right;
@@ -67,7 +69,11 @@ ul.topnav li.rightext {float: left;}
 
 .mySlides {
 
-padding-left: 290px;
+width:100%;
+min-width: 100px;
+margin-left: 0;
+margin-right: 0;
+
  
     }
 	.slide{ background-color: grey;}

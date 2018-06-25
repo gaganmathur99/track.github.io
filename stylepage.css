@@ -62,18 +62,19 @@ ul.topnav li.rightext {float: right;}
 		   font-size: 20px;
 		   }
 .image {	
-			height: 400px;
-			width: 400px}
+			
+			width: 100%;
+			}
 .image:hover{
 				box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
 			}
-.column {
+/*.column {
     margin-left: 15%;
 	float: left;
 	text-align: center;
     padding: 15px;
 }
-
+*/
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -83,6 +84,7 @@ ul.topnav li.rightext {float: right;}
 .fb{ height: 30px;}
  .YouTube{ height: 60px; }
  .footer{ 
+			width: 100%;
 			margin-top: 150px;
 			background-color: grey;
 		}
@@ -96,11 +98,15 @@ ul.topnav li.rightext {float: right;}
 .dropdown {
     position: right;
     display: inline-block;
+	margin-left: 10%;
+	width: 35%;
 }
 .dropdown2 {
     position: relativeleft;
     display: inline-block;
-}
+	margin-left: 10%;
+	width: 35%;
+	}
 
 .dropdown-content {
     display: none;
